@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="Initialization">
+    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="delete Test\AppTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/testJava",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -48,7 +49,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677946855063</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete Test\AppTest.java">
+      <created>1677948111829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677948111829</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,7 +72,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialization" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialization" />
+    <MESSAGE value="delete Test\AppTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Test\AppTest.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
