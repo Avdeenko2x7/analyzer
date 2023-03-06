@@ -3,6 +3,8 @@ package com.javarush.cryptoanalyzer.avdeenko.services.decrypt;
 
 import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;
 
+import java.io.*;
+
 public class Decrypt {
 
     //Расшифровывает текст, зашифрованный шифром Цезаря с заданным ключом.
@@ -18,5 +20,19 @@ public class Decrypt {
         }
         return plaintext.toString();
     }
+
+    //Расшифровывает файл, зашифрованный шифром Цезаря с заданным ключом, и сохраняет результат в новый файл.
+    public static void decryptFile(String inputFilename, String outputFilename, int key) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFilename));
+             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilename))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String decryptedLine = decrypt(line, key);
+                writer.write(decryptedLine);
+                writer.newLine();
+            }
+        }
+    }
+
 
 }
