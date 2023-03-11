@@ -1,9 +1,11 @@
 package com.javarush.cryptoanalyzer.avdeenko;
 
-public class App 
+import com.javarush.cryptoanalyzer.avdeenko.view.GUI_CryptoAnalyzer;
+
+public class App
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void run(){
+        new GUI_CryptoAnalyzer();
     }
+
 }

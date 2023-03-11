@@ -41,7 +41,7 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
         add(keyLabel);
         add(keyField);
 
-        JLabel defaultFilesLabel = new JLabel(" if the fields are empty, the values will be default");
+        JLabel defaultFilesLabel = new JLabel(" *if the fields are empty, the values will be default");
         defaultFilesLabel.setHorizontalAlignment(SwingConstants.LEFT);
         defaultFilesLabel.setVerticalAlignment(SwingConstants.CENTER);
         add(defaultFilesLabel);
