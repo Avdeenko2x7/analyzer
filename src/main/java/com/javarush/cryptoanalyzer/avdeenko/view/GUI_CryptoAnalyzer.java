@@ -97,7 +97,7 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
             if (e.getActionCommand().equals("Encrypt")) {
                 if(twoAreEmpty){
-                    Encrypt.encryptWriteFile("input.txt", "encoded.txt", key);
+                    Encrypt.encryptWriteFile(defaultInputFile, defaultEncodedFile, key);
                     JOptionPane.showMessageDialog(this, encryptSuccess);
                 } else{
                     Encrypt.encryptWriteFile(inputFilename, outputFilename, key);
@@ -106,7 +106,7 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
             } else if (e.getActionCommand().equals("Decrypt")) {
                 if(twoAreEmpty){
-                    Decrypt.decryptWriteFile("encoded.txt", "output.txt", key);
+                    Decrypt.decryptWriteFile(defaultEncodedFile, defaultOutputFile, key);
                     JOptionPane.showMessageDialog(this, decryptSuccess);
                 }else {
                     Decrypt.decryptWriteFile(inputFilename, outputFilename, key);
@@ -115,7 +115,7 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
             } else if (e.getActionCommand().equals("Brute Force")) {
                 if(twoAreEmpty){
-                    BruteForce.bruteForce("encoded.txt", "output.txt");
+                    BruteForce.bruteForce(defaultEncodedFile, defaultOutputFile);
                     JOptionPane.showMessageDialog(this, bruteforceSuccess);
                 }else{
                     BruteForce.bruteForce(inputFilename, outputFilename);

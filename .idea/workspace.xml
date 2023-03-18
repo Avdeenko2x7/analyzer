@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="rename methods in Encrypt and Decrypt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" afterDir="false" />
+    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="ConsoleView added&#10;App.java added opportunity to choose between Console and GUI interface&#10;FilesConst added some constants">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/constants/FilesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/constants/FilesConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/BruteForce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,14 +35,14 @@
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Cryptoanalyzer/CryptoAnalyzer",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Cryptoanalyzer/CryptoAnalyzer&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.javarush.cryptoanalyzer.avdeenko.Main" />
@@ -95,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679134494383</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ConsoleView added&#10;App.java added opportunity to choose between Console and GUI interface&#10;FilesConst added some constants">
+      <created>1679139847062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679139847062</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,7 +118,8 @@
     <MESSAGE value="Initialization" />
     <MESSAGE value="delete Test\AppTest.java" />
     <MESSAGE value="rename methods in Encrypt and Decrypt" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename methods in Encrypt and Decrypt" />
+    <MESSAGE value="ConsoleView added&#10;App.java added opportunity to choose between Console and GUI interface&#10;FilesConst added some constants" />
+    <option name="LAST_COMMIT_MESSAGE" value="ConsoleView added&#10;App.java added opportunity to choose between Console and GUI interface&#10;FilesConst added some constants" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

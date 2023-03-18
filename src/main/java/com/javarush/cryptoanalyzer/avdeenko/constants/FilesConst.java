@@ -7,4 +7,8 @@ public class FilesConst {
 
     public static final String Regex = "^[а-яА-ЯёЁ]+[.,\"':!?\\-]*$";
 
+    public static String defaultInputFile = "input.txt";
+    public static String defaultOutputFile = "output.txt";
+    public static String defaultEncodedFile = "encoded.txt";
+
 }

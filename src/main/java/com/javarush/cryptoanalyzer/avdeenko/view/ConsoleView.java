@@ -7,18 +7,23 @@ import com.javarush.cryptoanalyzer.avdeenko.services.Encrypt;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static com.javarush.cryptoanalyzer.avdeenko.constants.FilesConst.*;
+
 public class ConsoleView {
 
-    public ConsoleView(){
+    public ConsoleView() {
         Scanner scanner = new Scanner(System.in);
-        String defaultInputFile = "input.txt";
-        String defaultOutputFile = "output.txt";
-        String defaultEncodedFile = "encoded.txt";
 
         System.out.println("Введите путь к файлу (по умолчанию: " + defaultInputFile + "):");
         String inputFile = scanner.nextLine();
         if (inputFile.isEmpty()) {
             inputFile = defaultInputFile;
+        }
+
+        System.out.println("Введите путь для сохранения результата (по умолчанию: " + defaultOutputFile + "):");
+        String outputFile = scanner.nextLine();
+        if (outputFile.isEmpty()) {
+            outputFile = defaultOutputFile;
         }
 
         System.out.println("Выберите действие:");
@@ -32,22 +37,22 @@ public class ConsoleView {
 
         if (action == 1) {
             try {
-                Encrypt.encryptWriteFile(inputFile, defaultEncodedFile, key);
-                System.out.println("Файл успешно зашифрован и сохранен в файл " + defaultEncodedFile);
+                Encrypt.encryptWriteFile(inputFile, outputFile, key);
+                System.out.println("Файл успешно зашифрован и сохранен в файл " + outputFile);
             } catch (IOException e) {
                 System.out.println("Ошибка при зашифровании файла: " + e.getMessage());
             }
         } else if (action == 2) {
             try {
-                Decrypt.decryptWriteFile(defaultEncodedFile, defaultOutputFile, key);
-                System.out.println("Файл успешно расшифрован и сохранен в файл " + defaultOutputFile);
+                Decrypt.decryptWriteFile(inputFile, outputFile, key);
+                System.out.println("Файл успешно расшифрован и сохранен в файл " + outputFile);
             } catch (IOException e) {
                 System.out.println("Ошибка при расшифровке файла: " + e.getMessage());
             }
         } else if (action == 3) {
             try {
-                BruteForce.bruteForce(defaultEncodedFile, defaultOutputFile);
-                System.out.println("Файл успешно расшифрован методом брутфорса и сохранен в файл " + defaultOutputFile);
+                BruteForce.bruteForce(inputFile, outputFile);
+                System.out.println("Файл успешно расшифрован методом брутфорса и сохранен в файл " + outputFile);
             } catch (IOException e) {
                 System.out.println("Ошибка при расшифровке файла: " + e.getMessage());
             }
