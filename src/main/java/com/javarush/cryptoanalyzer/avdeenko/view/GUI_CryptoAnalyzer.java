@@ -1,13 +1,15 @@
 package com.javarush.cryptoanalyzer.avdeenko.view;
-import com.javarush.cryptoanalyzer.avdeenko.services.bruteforce.BruteForce;
-import com.javarush.cryptoanalyzer.avdeenko.services.decrypt.Decrypt;
-import com.javarush.cryptoanalyzer.avdeenko.services.encrypt.Encrypt;
+import com.javarush.cryptoanalyzer.avdeenko.services.BruteForce;
+import com.javarush.cryptoanalyzer.avdeenko.services.Decrypt;
+import com.javarush.cryptoanalyzer.avdeenko.services.Encrypt;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+
+import static com.javarush.cryptoanalyzer.avdeenko.constants.FilesConst.*;
 
 public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
@@ -94,33 +96,31 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
         try {
 
 
-            String path = "D:\\Cryptoanalyzer\\CryptoAnalyzer\\src\\main\\java\\com\\javarush\\cryptoanalyzer\\avdeenko\\resources\\";
-
             if (e.getActionCommand().equals("Encrypt")) {
                 if(twoAreEmpty){
-                    Encrypt.encryptFile(path + "input.txt", path + "encoded.txt", key);
-                    JOptionPane.showMessageDialog(this, "File encrypted successfully!");
+                    Encrypt.encryptFile("input.txt", "encoded.txt", key);
+                    JOptionPane.showMessageDialog(this, encrytSuccess);
                 } else{
                     Encrypt.encryptFile(inputFilename, outputFilename, key);
-                    JOptionPane.showMessageDialog(this, "File encrypted successfully!");
+                    JOptionPane.showMessageDialog(this, encrytSuccess);
                 }
 
             } else if (e.getActionCommand().equals("Decrypt")) {
                 if(twoAreEmpty){
-                    Decrypt.decryptFile(path + "encoded.txt", path + "output.txt", key);
-                    JOptionPane.showMessageDialog(this, "File decrypted successfully!");
+                    Decrypt.decryptFile("encoded.txt", "output.txt", key);
+                    JOptionPane.showMessageDialog(this, decryptSuccess);
                 }else {
                     Decrypt.decryptFile(inputFilename, outputFilename, key);
-                    JOptionPane.showMessageDialog(this, "File decrypted successfully!");
+                    JOptionPane.showMessageDialog(this, decryptSuccess);
                 }
 
             } else if (e.getActionCommand().equals("Brute Force")) {
                 if(twoAreEmpty){
-                    BruteForce.bruteForce(path + "encoded.txt", path + "output.txt");
-                    JOptionPane.showMessageDialog(this, "File decrypted with brute force successfully!");
+                    BruteForce.bruteForce("encoded.txt", "output.txt");
+                    JOptionPane.showMessageDialog(this, bruteforceSuccess);
                 }else{
                     BruteForce.bruteForce(inputFilename, outputFilename);
-                    JOptionPane.showMessageDialog(this, "File decrypted with brute force successfully!");
+                    JOptionPane.showMessageDialog(this, bruteforceSuccess);
                 }
 
             }

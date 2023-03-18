@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.avdeenko.services.decrypt;
+package com.javarush.cryptoanalyzer.avdeenko.services;
 
 
 import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;

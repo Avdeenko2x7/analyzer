@@ -1,14 +1,11 @@
-package com.javarush.cryptoanalyzer.avdeenko.services.bruteforce;
+package com.javarush.cryptoanalyzer.avdeenko.services;
 
 import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;
-import com.javarush.cryptoanalyzer.avdeenko.services.decrypt.Decrypt;
 
 import java.io.*;
-import java.util.Dictionary;
 
-import static com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet.ALPHABET;
-import static com.javarush.cryptoanalyzer.avdeenko.services.decrypt.Decrypt.decrypt;
-import static com.javarush.cryptoanalyzer.avdeenko.services.decrypt.Decrypt.decryptFile;
+import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decrypt;
+import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decryptFile;
 
 public class BruteForce {
     public static void bruteForce(String inputFilename, String outputFilename) throws IOException {
