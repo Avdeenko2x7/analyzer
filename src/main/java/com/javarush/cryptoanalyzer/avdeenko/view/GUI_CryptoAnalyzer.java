@@ -95,22 +95,21 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
         try {
 
-
             if (e.getActionCommand().equals("Encrypt")) {
                 if(twoAreEmpty){
-                    Encrypt.encryptFile("input.txt", "encoded.txt", key);
+                    Encrypt.encryptWriteFile("input.txt", "encoded.txt", key);
                     JOptionPane.showMessageDialog(this, encrytSuccess);
                 } else{
-                    Encrypt.encryptFile(inputFilename, outputFilename, key);
+                    Encrypt.encryptWriteFile(inputFilename, outputFilename, key);
                     JOptionPane.showMessageDialog(this, encrytSuccess);
                 }
 
             } else if (e.getActionCommand().equals("Decrypt")) {
                 if(twoAreEmpty){
-                    Decrypt.decryptFile("encoded.txt", "output.txt", key);
+                    Decrypt.decryptWriteFile("encoded.txt", "output.txt", key);
                     JOptionPane.showMessageDialog(this, decryptSuccess);
                 }else {
-                    Decrypt.decryptFile(inputFilename, outputFilename, key);
+                    Decrypt.decryptWriteFile(inputFilename, outputFilename, key);
                     JOptionPane.showMessageDialog(this, decryptSuccess);
                 }
 

@@ -5,7 +5,7 @@ import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;
 import java.io.*;
 
 import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decrypt;
-import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decryptFile;
+import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decryptWriteFile;
 
 public class BruteForce {
     public static void bruteForce(String inputFilename, String outputFilename) throws IOException {
@@ -23,7 +23,7 @@ public class BruteForce {
                     }
                 }
             }
-            decryptFile(inputFilename, outputFilename, bestKey);
+            decryptWriteFile(inputFilename, outputFilename, bestKey);
         }
     }
     private static int countMatches(String text) {

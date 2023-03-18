@@ -22,7 +22,7 @@ public class Decrypt {
     }
 
     //Расшифровывает файл, зашифрованный шифром Цезаря с заданным ключом, и сохраняет результат в новый файл.
-    public static void decryptFile(String inputFilename, String outputFilename, int key) throws IOException {
+    public static void decryptWriteFile(String inputFilename, String outputFilename, int key) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFilename));
              BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilename))) {
             String line;
