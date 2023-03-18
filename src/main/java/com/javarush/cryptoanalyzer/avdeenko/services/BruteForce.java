@@ -4,6 +4,7 @@ import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;
 
 import java.io.*;
 
+import static com.javarush.cryptoanalyzer.avdeenko.constants.FilesConst.Regex;
 import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decrypt;
 import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decryptWriteFile;
 
@@ -30,7 +31,7 @@ public class BruteForce {
         int matches = 0;
         String[] words = text.split("\\s+");
         for (String word : words) {
-            if (word.matches("^[а-яА-ЯёЁ]+[.,\"':!?\\-]*$")) {
+            if (word.matches(Regex)) {
                 matches++;
             }
         }

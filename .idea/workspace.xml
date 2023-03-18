@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="delete Test\AppTest.java">
+    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="rename methods in Encrypt and Decrypt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encoded.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encoded.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/constants/FilesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/constants/FilesConst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/BruteForce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/Decrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/Decrypt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/Encrypt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -81,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677948111829</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="rename methods in Encrypt and Decrypt">
+      <created>1679134494383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679134494383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialization" />
     <MESSAGE value="delete Test\AppTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete Test\AppTest.java" />
+    <MESSAGE value="rename methods in Encrypt and Decrypt" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename methods in Encrypt and Decrypt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
