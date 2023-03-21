@@ -72,24 +72,24 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         String inputFilename = inputFilenameField.getText();
         String outputFilename = outputFilenameField.getText();
+        int key = 0;
 
-        //Проверки на коректный ввод ключа
-        String keyString = keyField.getText();
-        if (keyString.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Пожалуйста, введите ключ.", "Ошибка", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
+        if (e.getActionCommand().equals("Encrypt") || e.getActionCommand().equals("Decrypt")) {
 
-        for (char c : keyString.toCharArray()) {
-            if (!Character.isDigit(c)) {
-                JOptionPane.showMessageDialog(null, "Ключ должен состоять только из цифр.", "Ошибка", JOptionPane.ERROR_MESSAGE);
+            String keyString = keyField.getText();
+            if (keyString.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Пожалуйста, введите ключ.", "Ошибка", JOptionPane.ERROR_MESSAGE);
                 return;
             }
+
+            for (char c : keyString.toCharArray()) {
+                if (!Character.isDigit(c)) {
+                    JOptionPane.showMessageDialog(null, "Ключ должен состоять только из цифр.", "Ошибка", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+            }
+            key = Integer.parseInt(keyString);
         }
-        int key = Integer.parseInt(keyString);
-
-
-
 
         boolean twoAreEmpty = inputFilename.equals("") && outputFilename.equals("");
 
