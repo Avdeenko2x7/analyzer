@@ -1,7 +1,7 @@
-package com.javarush.cryptoanalyzer.avdeenko;
+package com.javarush.cryptanalyzer.avdeenko;
 
-import com.javarush.cryptoanalyzer.avdeenko.view.ConsoleView;
-import com.javarush.cryptoanalyzer.avdeenko.view.GUI_CryptoAnalyzer;
+import com.javarush.cryptanalyzer.avdeenko.view.ConsoleView;
+import com.javarush.cryptanalyzer.avdeenko.view.GUI_CryptoAnalyzer;
 
 import javax.swing.*;
 

@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="little changes">
+    <list default="true" id="cb35eb1a-78a6-4c98-b46f-6c14d7f2ef61" name="Changes" comment="GUI_CryptoAnalyzer and ConsoleView added some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encoded.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encoded.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/constants/CryptoAlphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/constants/CryptoAlphabet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/constants/FilesConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/constants/FilesConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/BruteForce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/services/BruteForce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/Decrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/services/Decrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/services/Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/services/Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/view/ConsoleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/cryptoanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/cryptanalyzer/avdeenko/view/GUI_CryptoAnalyzer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +41,7 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -44,11 +54,11 @@
 }</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javarush.cryptoanalyzer.avdeenko.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.cryptanalyzer.avdeenko.Main" />
       <module name="CryptoAnalyzer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javarush.cryptoanalyzer.avdeenko.*" />
+          <option name="PATTERN" value="com.javarush.cryptanalyzer.avdeenko.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679156076895</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="GUI_CryptoAnalyzer and ConsoleView added some changes">
+      <created>1679385068793</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679385068793</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,7 +150,8 @@
     <MESSAGE value="rename methods in Encrypt and Decrypt" />
     <MESSAGE value="ConsoleView added&#10;App.java added opportunity to choose between Console and GUI interface&#10;FilesConst added some constants" />
     <MESSAGE value="little changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="little changes" />
+    <MESSAGE value="GUI_CryptoAnalyzer and ConsoleView added some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI_CryptoAnalyzer and ConsoleView added some changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

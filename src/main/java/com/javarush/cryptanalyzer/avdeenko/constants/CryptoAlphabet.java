@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.avdeenko.constants;
+package com.javarush.cryptanalyzer.avdeenko.constants;
 
 public class CryptoAlphabet {
     private static final String lettersUpperCase = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";

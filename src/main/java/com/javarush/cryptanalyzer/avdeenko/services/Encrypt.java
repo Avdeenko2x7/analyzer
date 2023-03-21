@@ -1,6 +1,6 @@
-package com.javarush.cryptoanalyzer.avdeenko.services;
+package com.javarush.cryptanalyzer.avdeenko.services;
 
-import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;
+import com.javarush.cryptanalyzer.avdeenko.constants.CryptoAlphabet;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.avdeenko.constants;
+package com.javarush.cryptanalyzer.avdeenko.constants;
 
 public class FilesConst {
     public static final String encryptSuccess = "File encrypted successfully!";

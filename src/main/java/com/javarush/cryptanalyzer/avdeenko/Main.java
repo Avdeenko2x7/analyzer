@@ -1,4 +1,4 @@
-package com.javarush.cryptoanalyzer.avdeenko;
+package com.javarush.cryptanalyzer.avdeenko;
 
 public class Main {
     public static void main(String[] args) {

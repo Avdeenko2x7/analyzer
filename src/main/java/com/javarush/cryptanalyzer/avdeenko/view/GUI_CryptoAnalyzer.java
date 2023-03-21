@@ -1,7 +1,7 @@
-package com.javarush.cryptoanalyzer.avdeenko.view;
-import com.javarush.cryptoanalyzer.avdeenko.services.BruteForce;
-import com.javarush.cryptoanalyzer.avdeenko.services.Decrypt;
-import com.javarush.cryptoanalyzer.avdeenko.services.Encrypt;
+package com.javarush.cryptanalyzer.avdeenko.view;
+import com.javarush.cryptanalyzer.avdeenko.services.BruteForce;
+import com.javarush.cryptanalyzer.avdeenko.services.Decrypt;
+import com.javarush.cryptanalyzer.avdeenko.services.Encrypt;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
-import static com.javarush.cryptoanalyzer.avdeenko.constants.FilesConst.*;
+import static com.javarush.cryptanalyzer.avdeenko.constants.FilesConst.*;
 
 public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
@@ -115,11 +115,15 @@ public class GUI_CryptoAnalyzer extends JFrame implements ActionListener{
 
             } else if (e.getActionCommand().equals("Brute Force")) {
                 if(twoAreEmpty){
+                    int bestKey = BruteForce.bruteForce(defaultEncodedFile, defaultOutputFile);
+                    System.out.println("Подобранный ключ: " + bestKey);
                     BruteForce.bruteForce(defaultEncodedFile, defaultOutputFile);
-                    JOptionPane.showMessageDialog(this, bruteforceSuccess);
+                    JOptionPane.showMessageDialog(this, bruteforceSuccess + "(key= " + bestKey + ")");
                 }else{
+                    int bestKey = BruteForce.bruteForce(defaultEncodedFile, defaultOutputFile);
+                    System.out.println("Подобранный ключ: " + bestKey);
                     BruteForce.bruteForce(inputFilename, outputFilename);
-                    JOptionPane.showMessageDialog(this, bruteforceSuccess);
+                    JOptionPane.showMessageDialog(this, bruteforceSuccess + "(key= " + bestKey + ")");
                 }
 
             }

@@ -1,13 +1,13 @@
-package com.javarush.cryptoanalyzer.avdeenko.view;
+package com.javarush.cryptanalyzer.avdeenko.view;
 
-import com.javarush.cryptoanalyzer.avdeenko.services.BruteForce;
-import com.javarush.cryptoanalyzer.avdeenko.services.Decrypt;
-import com.javarush.cryptoanalyzer.avdeenko.services.Encrypt;
+import com.javarush.cryptanalyzer.avdeenko.services.BruteForce;
+import com.javarush.cryptanalyzer.avdeenko.services.Decrypt;
+import com.javarush.cryptanalyzer.avdeenko.services.Encrypt;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-import static com.javarush.cryptoanalyzer.avdeenko.constants.FilesConst.*;
+import static com.javarush.cryptanalyzer.avdeenko.constants.FilesConst.*;
 
 public class ConsoleView {
 
@@ -25,13 +25,13 @@ public class ConsoleView {
         String encodedFile = defaultEncodedFile;
 
         if (action == 1) {
-            System.out.println("Введите путь к файлу для шифрования (по умолчанию: " + defaultInputFile + "):");
+            System.out.println("Введите путь к файлу для шифрования (При нажатии Enter - по умолчанию: " + defaultInputFile + "):");
             scanner.nextLine();
             String input = scanner.nextLine();
             if (!input.isEmpty()) {
                 inputFile = input;
             }
-            System.out.println("Введите путь к файлу для сохранения (по умолчанию: " + defaultEncodedFile + "):");
+            System.out.println("Введите путь к файлу для сохранения (При нажатии Enter - по умолчанию: " + defaultEncodedFile + "):");
             String encoded = scanner.nextLine();
             if (!encoded.isEmpty()) {
                 encodedFile = encoded;
@@ -45,13 +45,13 @@ public class ConsoleView {
                 System.out.println("Ошибка при зашифровании файла: " + e.getMessage());
             }
         } else if (action == 2 || action == 3) {
-            System.out.println("Введите путь к файлу для расшифровки (по умолчанию: " + defaultEncodedFile + "):");
+            System.out.println("Введите путь к файлу для расшифровки (При нажатии Enter - по умолчанию: " + defaultEncodedFile + "):");
             scanner.nextLine();
             String encoded = scanner.nextLine();
             if (!encoded.isEmpty()) {
                 encodedFile = encoded;
             }
-            System.out.println("Введите путь для сохранения результата (по умолчанию: " + defaultOutputFile + "):");
+            System.out.println("Введите путь для сохранения результата (При нажатии Enter - по умолчанию: " + defaultOutputFile + "):");
             String output = scanner.nextLine();
             if (!output.isEmpty()) {
                 outputFile = output;
@@ -68,8 +68,9 @@ public class ConsoleView {
                 }
             } else if (action == 3) {
                 try {
-                    BruteForce.bruteForce(encodedFile, outputFile);
+                    int key = BruteForce.bruteForce(encodedFile, outputFile);
                     System.out.println("Файл успешно расшифрован методом брутфорса и сохранен в файл " + outputFile);
+                    System.out.println("Подобранный ключ: " + key);
                 } catch (IOException e) {
                     System.out.println("Ошибка при расшифровке файла: " + e.getMessage());
                 }

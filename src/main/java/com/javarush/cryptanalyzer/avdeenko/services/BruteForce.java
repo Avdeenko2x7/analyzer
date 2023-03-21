@@ -1,19 +1,19 @@
-package com.javarush.cryptoanalyzer.avdeenko.services;
+package com.javarush.cryptanalyzer.avdeenko.services;
 
-import com.javarush.cryptoanalyzer.avdeenko.constants.CryptoAlphabet;
+import com.javarush.cryptanalyzer.avdeenko.constants.CryptoAlphabet;
 
 import java.io.*;
 
-import static com.javarush.cryptoanalyzer.avdeenko.constants.FilesConst.Regex;
-import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decrypt;
-import static com.javarush.cryptoanalyzer.avdeenko.services.Decrypt.decryptWriteFile;
+import static com.javarush.cryptanalyzer.avdeenko.constants.FilesConst.Regex;
+import static com.javarush.cryptanalyzer.avdeenko.services.Decrypt.decrypt;
+import static com.javarush.cryptanalyzer.avdeenko.services.Decrypt.decryptWriteFile;
 
 public class BruteForce {
-    public static void bruteForce(String inputFilename, String outputFilename) throws IOException {
+    public static int bruteForce(String inputFilename, String outputFilename) throws IOException {
+        int bestKey = 0;
         try (BufferedReader reader = new BufferedReader(new FileReader(inputFilename))) {
             String line;
             int maxMatches = 0;
-            int bestKey = 0;
             while ((line = reader.readLine()) != null) {
                 for (int key = 0; key < CryptoAlphabet.ALPHABET_LENGTH; key++) {
                     String decryptedLine = decrypt(line, key);
@@ -26,6 +26,7 @@ public class BruteForce {
             }
             decryptWriteFile(inputFilename, outputFilename, bestKey);
         }
+        return bestKey;
     }
     private static int countMatches(String text) {
         int matches = 0;
